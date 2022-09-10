@@ -38,16 +38,36 @@ indent_size = 4
 
 
 #
+# .json files
+#
+[*.json]
+indent_style = tab
+indent_size = 4
+
+
+#
+# .yaml files
+#
+[*.{yml,yaml}]
+indent_size = 2
+
+
+#
 # Windows batch files
 #
 [*.{bat,cmd}]
 end_of_line = crlf
 
 
+#################################################################################
+
+
 #
 # C# files
 #
 [*.cs]
+# BOM is supported and files may contain non-English texts (think: author names, comments
+# and maybe even strings to show to the user).
 charset = utf-8-bom
 
 # For explanation why "crlf", see: https://github.com/skrysmanski/base-dotnet/blob/main/docs/cs-line-endings.md
@@ -66,6 +86,9 @@ dotnet_separate_import_directive_groups = true:suggestion
 # VS project files
 #
 [*.csproj]
+# BOM is supported.
+charset = utf-8-bom
+
 # This is how Visual Studio creates project files.
 indent_size = 2
 
@@ -79,27 +102,26 @@ end_of_line = unset
 # Razor files
 #
 [*.cshtml]
+# BOM is supported and files may contain native (i.e. non-English) texts.
 charset = utf-8-bom
 
 
 #
 # .props files
 #
-[*.props]
+[*.{props,targets,tasks}]
+# BOM is supported.
+charset = utf-8-bom
+
 # This mirrors the indent size for .csproj files.
 indent_size = 2
 
 
 #
-# .json files
-#
-[*.json]
-indent_size = 2
-
-#
 # Visual Studio Solution files
 #
 [*.sln]
+# Visual Studio creates .sln files with BOM.
 charset = utf-8-bom
 
 # .sln files require tabs or the solution won't load
@@ -108,8 +130,11 @@ indent_size = 4
 
 end_of_line = crlf
 
+
 #
 # ReSharper settings files
 #
 [*.DotSettings]
+# ReSharper creates .DotSettings files with BOM.
+charset = utf-8-bom
 indent_style = tab
