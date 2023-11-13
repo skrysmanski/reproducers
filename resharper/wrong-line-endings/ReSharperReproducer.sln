@@ -7,7 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReSharperReproducer", "ReSh
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5F6BCAA-D3B4-4DC3-857F-06CEA843F96B}"
 	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
+		..\..\.editorconfig = ..\..\.editorconfig
+		..\..\.gitattributes = ..\..\.gitattributes
 		ReSharperReproducer.sln.DotSettings = ReSharperReproducer.sln.DotSettings
 	EndProjectSection
 EndProject
