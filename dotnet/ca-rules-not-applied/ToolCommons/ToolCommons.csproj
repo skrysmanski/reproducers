@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48;net8.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Project Settings">
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors></WarningsAsErrors>
+    <NoWarn></NoWarn>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Code Analysis">
+    <AnalysisMode>All</AnalysisMode>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+
+  <ItemGroup Label="Code Analysis">
+    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)CA.globalconfig" />
+  </ItemGroup>
+
+</Project>

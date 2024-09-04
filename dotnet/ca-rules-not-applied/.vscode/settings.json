@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.DotSettings": "xml",
+        "*.globalconfig": "editorconfig",
+    },
+}

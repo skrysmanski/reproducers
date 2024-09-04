@@ -1,0 +1,8 @@
+is_global = true
+
+dotnet_analyzer_diagnostic.severity = error
+
+#dotnet_diagnostic.CA1031.severity = none
+
+dotnet_diagnostic.IDE0005.severity = none
+#dotnet_diagnostic.IDE0160.severity = none
