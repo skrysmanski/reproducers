@@ -8,11 +8,20 @@ public static class TestClass
     {
         try
         {
+            var x = new SomethingDisposable();
             return int.Parse(input);
         }
         catch (Exception)
         {
             return -1;
         }
+    }
+}
+
+public sealed class SomethingDisposable : IDisposable
+{
+    public void Dispose()
+    {
+
     }
 }
