@@ -1,5 +1,4 @@
 {
 	"name": "VSCode SSH Reproducer",
-
-	"image": "mcr.microsoft.com/devcontainers/python:3"
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu"
 }
